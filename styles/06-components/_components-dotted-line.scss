@@ -1,0 +1,11 @@
+.c-dotted-line {
+    position: relative;
+    margin: 0;
+    height: 20px;
+    background: radial-gradient(circle 12px, transparent, transparent 40%, #C4C4C4 60%, #fff 60%, #fff 100%) 47px 0px/20px 20px repeat-x;
+    @include for-desktop-up {
+        height: 112px;
+        width: 20px;
+        background: radial-gradient(circle 12px, transparent, transparent 40%, #C4C4C4 60%, #fff 60%, #fff 100%) 40px 12px/20px 22px repeat;
+    }
+}

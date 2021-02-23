@@ -1,0 +1,52 @@
+.o-content-container {
+    max-width: 335px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    @include for-tablet-landscape-up {
+        max-width: 950px;
+    }
+    @include for-desktop-up {
+        max-width: 1290px;
+    }
+}
+
+.o-flex-container {
+    display: flex;
+    position: relative;
+    &--row {
+        flex-direction: row;
+    }
+    &--col {
+        flex-direction: column;
+    }
+    &--wrap {
+        flex-wrap: wrap;
+    }
+    &--nowrap {
+        flex-wrap: nowrap;
+    }
+    &--space-btw {
+        justify-content: space-between;
+    }
+    &--centered {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.o-grid-container {
+    display: grid;
+    position: relative;
+    &--1col {
+        grid-template-columns: 1fr;
+    }
+    &--2col {
+        grid-template-columns: 1fr 1fr;
+    }
+    &--centered {
+        justify-content: center;
+        align-items: center;
+    }
+}

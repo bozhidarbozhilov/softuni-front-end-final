@@ -1,0 +1,117 @@
+.c-findus-card {
+    width: 519px;
+    padding: 32px;
+    position: absolute;
+    top: 232px;
+    left: 75px;
+    background-color: #fff;
+    box-shadow: $shadow-1;
+    border-radius: 12px;
+    grid-template-columns: 216px 216px;
+    grid-template-areas: "adr dh" "cont ." "btn btn";
+    grid-auto-flow: column;
+    column-gap: 24px;
+    row-gap: 14px;
+    &__address {
+        grid-area: adr;
+        p {
+            padding-right: 20px;
+        }
+    }
+    &__contacts {
+        grid-area: cont;
+    }
+    &__working-hours {
+        grid-area: dh;
+        display: grid;
+        grid-template-areas: "worktime worktime" "weekhours weekdays" "weekendhours weekenddays";
+        grid-template-columns: 88px 103px;
+        column-gap: 24px;
+        &__worktime {
+            grid-area: worktime;
+        }
+        &__week-hours,
+        &__weekend-hours {
+            color: $secondary-800;
+        }
+        &__week-hours {
+            grid-area: weekhours;
+        }
+        &__weekend-hours {
+            grid-area: weekendhours;
+        }
+        &__week-days {
+            grid-area: weekdays;
+        }
+        &__weekend-days {
+            grid-area: weekenddays;
+        }
+    }
+    &__btn {
+        grid-area: btn;
+        margin: 18px auto 0 auto;
+    }
+}
+
+.c-write-us {
+    margin: 181px auto 90px auto;
+    max-width: 850px;
+    width: 100%;
+    &__heading {
+        color: $primary-300;
+        text-align: center;
+    }
+    &__form {
+        padding-top: 32px;
+        display: grid;
+        grid-template-areas: "username email" "message message" "btn .";
+        column-gap: 32px;
+        row-gap: 30px;
+        &__name,
+        &__email,
+        &__message {
+            padding: 16px;
+            border-radius: 6px;
+            color: $grey-500;
+            border: 1px solid $grey-500;
+        }
+        &__name {
+            grid-area: username;
+        }
+        &__email {
+            grid-area: email;
+        }
+        &__message {
+            grid-area: message;
+        }
+        &__submit {
+            grid-area: btn;
+            justify-self: start;
+        }
+    }
+}
+
+.c-transport {
+    background-color: $secondary-50;
+    &__grid {
+        color: $grey-700;
+        padding: 96px 0 108px 0;
+        display: grid;
+        grid-template-areas: "heading heading heading" "metro bus shuttle";
+        grid-template-columns: repeat(3, 407px);
+        column-gap: 33px;
+        row-gap: 48px;
+        .c-contact__heading {
+            grid-area: heading;
+        }
+        &__metro {
+            grid-area: metro;
+        }
+        &__buses {
+            grid-area: bus;
+        }
+        &__shuttles {
+            grid-area: shuttle;
+        }
+    }
+}

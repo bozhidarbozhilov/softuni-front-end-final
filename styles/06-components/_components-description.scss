@@ -1,0 +1,30 @@
+.c-description {
+    &__heading {
+        display: flex;
+        flex-flow: row nowrap;
+        img {
+            margin-right: 18px;
+        }
+        h2 {
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+    &__content {
+        p {
+            margin-bottom: 16px;
+        }
+    }
+    @include for-desktop-up {
+        &__heading {
+            display: flex;
+            justify-content: start;
+            img {
+                margin-right: 40px;
+            }
+        }
+        &__content {
+            padding-left: 70px;
+        }
+    }
+}

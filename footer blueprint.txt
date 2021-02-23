@@ -1,0 +1,97 @@
+.c-footer {
+    &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 12px;
+        background-color: $grey-500;
+        position: relative;
+        top: -32px;
+    }
+    background-color: $grey-700;
+    color: $grey-200;
+    padding-top: 20px;
+    margin-top:108px;
+    &__mascot {
+        display: none;
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        &.o-flex-container--row {
+            justify-content: unset;
+            .c-footer__list-item {
+                padding: 26px 30px 0 0;
+            }
+            .c-footer__list-item a {
+                font-size: 30px;
+            }
+        }
+    }
+    &__list-item {
+        list-style: none;
+        padding: 6px 0;
+        a {
+            text-decoration: none;
+            color: $grey-200;
+        }
+    }
+    &__external-links__findus {
+        .c-footer__list__heading {
+            display: none;
+        }
+    }
+    &__rights-res {
+        line-height: 19px;
+        text-align: center;
+        color: $grey-500;
+        &--inline {
+            display: none;
+        }
+        &--mobile {
+            @include side-border(top, solid, 1, $grey-500);
+            padding: 16px 0 16px 0;
+            margin-top: 32px;
+        }
+    }
+    @include for-desktop-up {
+        margin-top: 178px;
+        &__mascot {
+            display: inline-block;
+            position: relative;
+            top: -150px;
+        }
+        &__internal-links,
+        &__external-links {
+            flex: 0 1 35%;
+            display: flex;
+            flex-flow: row nowrap;
+            max-height: 184px;
+        }
+        &__internal-links {
+            &__kids,
+            &__all {
+                padding-left: 85px;
+            }
+        }
+        &__external-links {
+            &__initiatives,
+            &__findus {
+                padding-left: 85px;
+            }
+            &__findus {
+                .c-footer__list__heading {
+                    display: inline-block;
+                }
+            }
+        }
+        &__rights-res {
+            &--inline {
+                display: inline-block;
+            }
+            &--mobile {
+                display: none;
+            }
+        }
+    }
+}

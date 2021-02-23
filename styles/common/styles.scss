@@ -1,0 +1,26 @@
+//settings
+@import "../01-settings/_settings-breakpoints";
+@import "../01-settings/_settings-colors";
+@import "../01-settings/_settings-typography.scss";
+@import "../01-settings/_settings-box-shadows";
+@import "../01-settings/_settings-mixinis";
+@import "../01-settings/_settings-animation";
+//tools
+//generic
+@import "../03-generic/_generic-normalize";
+//elements
+//objects
+@import "../05-objects/_objects-containers";
+//components
+@import "../06-components/_components-buttons";
+@import "../06-components/_components-header";
+@import "../06-components/_components-navigation";
+@import "../06-components/_components-signup";
+@import "../06-components/_components-description";
+@import "../06-components/_components-footer";
+@import "../06-components/_components-dotted-line";
+@import "../06-components/_components-person";
+@import "../06-components/pages/_components-index_content";
+@import "../06-components/pages/_components-trainers_content";
+@import "../06-components/pages/components-contact_content";
+//utilities
